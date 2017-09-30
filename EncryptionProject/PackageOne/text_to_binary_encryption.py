@@ -11,10 +11,12 @@ def binary_conversion(input_text):
     while(input_text_number>0):
         binary_number = str(input_text_number%2)+binary_number
         input_text_number = int(input_text_number/2)
+    if (ord(input_text) < 64):
+        binary_number = "0"+binary_number
     return binary_number
 
 #function calling
 binary_equivalent_text = ""
 for each_letter in text:
-    binary_equivalent_text = binary_conversion(each_letter)+binary_equivalent_text
+    binary_equivalent_text = str(binary_conversion(each_letter))+binary_equivalent_text
 print(binary_equivalent_text)
