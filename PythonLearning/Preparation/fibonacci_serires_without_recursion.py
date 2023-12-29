@@ -5,5 +5,4 @@ while iSequenceLength>0:
     print(iCurrent)
     iTemp,iNext=iNext,iCurrent+iNext
     iCurrent,iTemp=iTemp,iNext
-    # print(iNext)
     iSequenceLength-=1
