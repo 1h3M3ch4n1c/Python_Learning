@@ -1,4 +1,4 @@
-strTestString='A New Begining'
+strTestString=input('Enter the required string:')
 strTestList=[x for x in strTestString]
 strCheck=''
 for chrEachCharacter in strTestList:
